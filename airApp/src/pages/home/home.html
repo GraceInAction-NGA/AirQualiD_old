@@ -8,12 +8,13 @@
 </ion-header>
 
 <ion-content padding>
+  <img src="assets/imgs/airqualiD-t.gif" loop="false">
   <h3>Air QualiD</h3>
 
   <svg width="376" height="355" viewBox="0 0 376 355" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <text x="50%" y="55%" fill="#505050" text-anchor="middle" class="display-3" id="aqi-number">30</text>
-    <text x="50%" y="75%" fill="#505050" text-anchor="middle" class="display-3" id="aqi-text">good</text>
-    <g style="mix-blend-mode:multiply" filter="url(#filter0_d)">
+    <text x="50%" y="55%" fill="#505050" text-anchor="middle" class="display-3" id="aqi-number">Good</text>
+    <text x="50%" y="75%" fill="#505050" text-anchor="middle" class="display-3" id="aqi-text">30</text>
+    <g style="mix-blend-mode:multiply" opacity="0.5" filter="url(#filter0_d)">
       <path d="M353.513 166.16C359.171 251.3 289.6 325.248 198.123 331.327C95.2549 338.162 28.6683 284.85 22.2441 188.173C16.5864 103.033 76.5104 29.7264 177.635 23.0066C269.112 16.9279 347.089 69.4835 353.513 166.16Z" fill="url(#paint0_linear)"/>
     </g>
     <path d="M273.681 308.81L265.92 295.854C328.997 255.699 335.611 188.329 331.033 159.663C325.304 128.742 297.537 62.7903 232.303 46.3465C167.069 29.9027 115.404 56.7785 97.7256 72.2718C81.468 84.0078 48.0952 121.722 44.665 178.692C41.2348 235.661 83.8226 280.316 105.545 295.522L94.3907 311.976" stroke="#505050" stroke-width="5" stroke-linejoin="round"/>
@@ -35,11 +36,7 @@
   </svg>
   <p class="lead">Air quality is considered good, and air pollution poses little or no risk</p>
 
-  <ion-tabs>
-    <ion-tab [root]="chartsRoot" tabIcon="ios-arrow-down"></ion-tab>
-  </ion-tabs>
-
-  <button ion-button icon-only color="light" outline full>
+  <button ion-button icon-only color="light" outline full ng-click="move_down">
     <ion-icon name="ios-arrow-down"></ion-icon>
   </button>
 

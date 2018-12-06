@@ -42,6 +42,7 @@ $colors: (
 );
 
 
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -72,6 +73,9 @@ $colors: (
 
 @import "ionic.theme.default";
 
+.content-md {
+	background: linear-gradient(347deg, rgba(68,112,83,1) 0%, rgba(96,160,118,1) 35%, rgba(110,178,141,1) 100%);
+}
 
 // Ionicons
 // --------------------------------------------------
